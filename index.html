@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="teste">
+        <h1 id="titulo">Cadastro de Super Developers</h1>
+        <p id="subTitulo">Complete com suas informações</p>
+        <br>
+    </div>
+    <form >
+        <fieldset class="grupo">
+            <div class="campo">           
+                <input type="text" name="nome" id="nome" required placeholder="Nome">
+                <input type="text" name="name" id="lastname" required placeholder="Sobre Nome">
+                <input type="email" name="email" id="email" placeholder="E - mail" required>
+            </div>
+        </fieldset>
+
+        <div  class="campo">
+            <label><strong>Qual lado da aplicação vc desenvolve?</strong></label>
+            <div id="checu">
+                <label>
+                    <input type="radio" name="devweb" value="frontEnd" checked>Front-End
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backEnd">Back-End
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Full-Stack">Full-Stack
+                </label>
+            </div>   
+        </div>
+
+        <div  class="campo">
+            <label for="Senioridade"> <strong>Senioridade</strong></label>
+            <select id="Senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Estagiário</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que utiliza:</strong></label>
+                <br>
+                <br>
+
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Agular">
+                <label for="tecnologia4">Angular</label>
+
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br><br>
+            <label  style="text-align:center;"><strong>Conte um pouco sobre sua história...</strong></label> 
+        </div>
+         
+        <div class="campo">
+            <textarea style="width: 50% ;" name="historia" id="historia"  rows="6" placeholder=
+            "Nesta aplicação pude aprender um pouco mais a respeito da responsividade e organição dos elementos numa página,
+             e a utilizar alguns elementos corriqueiros mas que até o momento nao comhecia, o maior desafio enfrentado nessa 
+             aplicação foi a responsividade e a organização dos elemntos dentro do display Flex... Umas das novidades de aprendizado 
+             nessa aplicação foi o uso de tags que ja fazem a verificação do preenchimento do nome e email "></textarea>
+        </div>
+
+        <button type="submit" class="butao">Concluir</button>
+        
+    </form>
+</body>
+</html>

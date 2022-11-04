@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#titulo{
+    display: flex;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#subTitulo{
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+fieldset{
+    border: 0;
+}
+body{
+    background-image: linear-gradient(to right , #00fff781,#0066ff65,#09ff00ab );
+    background-size: 500% 100%;
+    animation: degrade-top 60s infinite alternate ;
+    
+    
+    font-family: sans-serif;
+    font-size: 1em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top:1%;
+    justify-content: center;
+
+
+}
+
+input, select,textarea, button{
+    border-radius: 5px;
+    font-size: 1em;
+}
+.campo{
+    justify-content: center;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    margin-left: 10px;
+    
+}
+fieldset.grupo .campo{
+    float: left;
+    text-align: center;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 7px;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    align-items: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    
+}
+.campo select option{
+    padding-right: 1rem;
+    
+}
+.campo input:focus,.campo select:focus,.campo textarea:focus{
+    background: #0066ff65;
+    text-align: center;
+}
+.butao{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    border: solid rgb(8, 7, 2) 1px  ;
+    height: 30px;
+    width: 65px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: rgb(1, 255, 56);
+    color: rgba(10, 8, 1, 0.663);
+    font-weight: 500;
+
+}
+@keyframes degrade-top {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+    
+}
