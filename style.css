@@ -79,6 +79,18 @@ fieldset.grupo .campo{
     background: #0066ff65;
     text-align: center;
 }
+
+
+
+#check{
+    
+    text-align: center;
+}
+#checu{
+    display: inline-block;
+}
+
+
 .butao{
     display: flex;
     margin-left: auto;
