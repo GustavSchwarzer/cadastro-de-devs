@@ -128,6 +128,7 @@ fieldset.grupo .campo{
     color: rgba(10, 8, 1, 0.663);
     font-weight: 500;
     margin-top: 15px;
+    margin-bottom: 10px;
 
 }
 @keyframes degrade-top {
