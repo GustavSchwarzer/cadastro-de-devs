@@ -19,13 +19,26 @@
     text-align: center;
     
 }
+
+.all{
+    padding: 30px 20px;
+    background: #000000a8;
+    border-radius: 30px 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.891);
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 fieldset{
     border: 0;
 }
 body{
-    background-image: linear-gradient(to right , #00fff781,#0066ff65,#09ff00ab );
-    background-size: 500% 100%;
-    animation: degrade-top 60s infinite alternate ;
+    background-image: linear-gradient(to right , #30185C,#06A2A3,rgb(24, 19, 93) );
+    
+    animation: degrade-top 1s infinite alternate ;
     
     
     font-family: sans-serif;
@@ -44,11 +57,15 @@ body{
 input, select,textarea, button{
     border-radius: 5px;
     font-size: 1em;
+    background: transparent;
+    
+    
 }
 .campo{
     justify-content: center;
     margin-bottom: 1em;
     text-align: center;
+    color: rgb(202, 187, 187);
 }
 .campo label{
     margin-bottom: 0.2em;
@@ -62,13 +79,15 @@ fieldset.grupo .campo{
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 7px;
-    border: 1px solid #59429d;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border: none;
+    border-bottom: 1px solid #000000;
+   
     align-items: center;
-    text-align: center;
+    text-align: left;
     margin-right: auto;
     margin-left: auto;
     margin-top: 5px;
+    color: #fff;
     
 }
 .campo select option{
@@ -76,8 +95,9 @@ fieldset.grupo .campo{
     
 }
 .campo input:focus,.campo select:focus,.campo textarea:focus{
-    background: #0066ff65;
+    outline: 1px solid #26a96a;
     text-align: center;
+    border: none;
 }
 
 
@@ -100,13 +120,14 @@ fieldset.grupo .campo{
     cursor: pointer;
     border: solid rgb(8, 7, 2) 1px  ;
     height: 30px;
-    width: 65px;
+    width: 150px;
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: rgb(1, 255, 56);
+    background: linear-gradient(to right , #135003c1,#0edf03d4,#00ff0de4 );
     color: rgba(10, 8, 1, 0.663);
     font-weight: 500;
+    margin-top: 15px;
 
 }
 @keyframes degrade-top {
